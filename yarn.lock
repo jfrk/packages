@@ -1996,8 +1996,8 @@ __metadata:
     "@babel/preset-env": ^7.16.5
     "@babel/preset-react": ^7.16.5
     "@babel/register": ^7.16.5
-    "@jfrk/ink-router": 0.0.0
-    "@jfrk/use-async": 0.0.0
+    "@jfrk/ink-router": ^0.1.1
+    "@jfrk/use-async": ^0.1.1
     ava: ^3.15.0
     chalk: ^4.1.2
     eslint-plugin-import: ^2.25.3
@@ -2020,7 +2020,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jfrk/ink-router@0.0.0, @jfrk/ink-router@workspace:packages/ink-router":
+"@jfrk/ink-router@^0.1.1, @jfrk/ink-router@workspace:packages/ink-router":
   version: 0.0.0-use.local
   resolution: "@jfrk/ink-router@workspace:packages/ink-router"
   dependencies:
@@ -2032,7 +2032,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@jfrk/use-async@0.0.0, @jfrk/use-async@workspace:packages/use-async":
+"@jfrk/use-async@^0.1.1, @jfrk/use-async@workspace:packages/use-async":
   version: 0.0.0-use.local
   resolution: "@jfrk/use-async@workspace:packages/use-async"
   dependencies:
