@@ -7,6 +7,7 @@
   ],
   "scripts": {
     "dev": "cross-env run-p -l 'dev:**'",
+    "dev:packages:gatsby-shadow-cli": "cd packages/gatsby-shadow-cli && yarn dev",
     "dev:packages:ink-router": "cd packages/ink-router && yarn dev",
     "format": "prettier --write '**/*.{js,json,md,yml}'"
   },

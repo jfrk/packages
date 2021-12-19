@@ -1,0 +1,65 @@
+{
+  "name": "@jfrk/gatsby-shadow-cli",
+  "version": "0.0.0",
+  "license": "MIT",
+  "bin": {
+    "gatsby-shadow": "lib/cli.js"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "dev": "yarn build --watch",
+    "test": "ava",
+    "run": "node lib/cli.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@babel/parser": "^7.16.6",
+    "@jfrk/ink-router": "0.0.0",
+    "@jfrk/use-async": "0.0.0",
+    "eslint-plugin-import": "^2.25.3",
+    "ink": "^3.2.0",
+    "ink-link": "^2.0.0",
+    "ink-spinner": "^4.0.3",
+    "meow": "^9.0.0",
+    "query-string": "^7.0.1",
+    "react": "^17.0.2",
+    "recast": "^0.20.5"
+  },
+  "ava": {
+    "babel": true,
+    "require": [
+      "@babel/register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "esmodules": true
+          },
+          "modules": false
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "devDependencies": {
+    "@ava/babel": "^2.0.0",
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.5",
+    "@babel/preset-env": "^7.16.5",
+    "@babel/preset-react": "^7.16.5",
+    "@babel/register": "^7.16.5",
+    "ava": "^3.15.0",
+    "chalk": "^4.1.2",
+    "ink-testing-library": "^2.1.0"
+  }
+}
