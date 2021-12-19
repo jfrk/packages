@@ -4,6 +4,9 @@
   "license": "MIT",
   "type": "module",
   "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "peerDependencies": {
     "react": "^17.0.2"
   },

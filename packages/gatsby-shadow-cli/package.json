@@ -12,12 +12,16 @@
   "scripts": {
     "build": "babel src -d lib",
     "dev": "yarn build --watch",
+    "prepare": "yarn build",
     "test": "ava",
     "run": "node lib/cli.js"
   },
   "files": [
     "lib"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "@babel/parser": "^7.16.6",
     "@jfrk/ink-router": "^0.1.0",

@@ -6,7 +6,11 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "babel src -d lib",
-    "dev": "yarn build --watch"
+    "dev": "yarn build --watch",
+    "prepare": "yarn build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "babel": {
     "presets": [
