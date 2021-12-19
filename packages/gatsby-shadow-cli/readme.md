@@ -5,13 +5,13 @@ CLI tool for working with shadowing in Gatsby
 ## Install
 
 ```bash
-$ npm i --g gatsby-shadow-cli
+$ npm i --g @jfrk/gatsby-shadow-cli
 ```
 
 ## How to use
 
 ```
-$ gatsby-shadow-cli --help
+$ gatsby-shadow --help
 
   Usage
     $ gatsby-shadow create <sourceFile>
