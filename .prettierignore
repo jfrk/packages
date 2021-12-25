@@ -1,2 +1,4 @@
 /lerna.json
 CHANGELOG.md
+.cache
+/examples/gatsby*/public
