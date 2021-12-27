@@ -1,10 +1,17 @@
 import { useState } from "react";
+import * as Y from "yjs";
 
 import logo from "./logo.svg";
 import "./App.css";
+import useYdocMap from "./useYdocMap";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const ymap = useYdocMap();
+
+  const count = ymap.get("count") || 0;
+  const setCount = (updater) => {
+    ymap.set("count", updater(ymap.get("count") || 0));
+  };
 
   return (
     <div className="App">
