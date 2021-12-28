@@ -1,17 +1,10 @@
-import { useState } from "react";
-import * as Y from "yjs";
-
 import logo from "./logo.svg";
+import useStore from "./useStore";
+
 import "./App.css";
-import useYdocMap from "./useYdocMap";
 
 function App() {
-  const ymap = useYdocMap();
-
-  const count = ymap.get("count") || 0;
-  const setCount = (updater) => {
-    ymap.set("count", updater(ymap.get("count") || 0));
-  };
+  const store = useStore();
 
   return (
     <div className="App">
@@ -19,8 +12,13 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>Hello Vite + React!</p>
         <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
+          <button
+            type="button"
+            onClick={() => {
+              store.app.count = (store.app.count || 0) + 1;
+            }}
+          >
+            count is: {store.app.count || 0}
           </button>
         </p>
         <p>
